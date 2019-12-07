@@ -24,11 +24,11 @@ endforeach
 # Make shared library
 
 fftlog_lib = library( 'fftlog',
-                      [ 'src/cdgamma.f',
-                        'src/drfftb.f',
-                        'src/drfftf.f',
-                        'src/drffti.f',
-                        'src/fftlog.f' ],
+                      [ 'cdgamma.f',
+                        'drfftb.f',
+                        'drfftf.f',
+                        'drffti.f',
+                        'fftlog.f' ],
                       install : true )
 
 # fftlog_dep = declare_dependency( link_with : fftlog_lib )
