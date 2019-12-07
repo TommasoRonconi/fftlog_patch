@@ -1,5 +1,8 @@
-Just a GitHub distribution of the original FFTLog
-=================================================
+Meson Build patch for FFTLog
+============================
+
+This repo just contains the `meson.build` script for installing FFTLog with
+the Meson build system tool.
 
 Description of FFTLog from the FFTLog-Website
 ---------------------------------------------
@@ -26,16 +29,6 @@ The FFTLog algorithm was originally proposed by [Talman_1978]_.
 
 License and Credits
 -------------------
-
-..
-   These additions to the original FFTLog-code are released to the public domain
-   under the `CC0 1.0 License
-   <http://creativecommons.org/publicdomain/zero/1.0>`_.
-
-..
-   Permission to distribute the original Fortran `FFTLog` code with this Python
-   `fftlog` package has been granted (email from Andrew Hamilton to Dieter
-   Werthmüller dated 28 September 2016).
 
 Credits commented in the original code:
 
