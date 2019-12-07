@@ -22,7 +22,7 @@ steps) and aliasing (periodic folding of frequencies), but under appropriate
 circumstances FFTLog may approximate the results of a continuous Fourier or
 Hankel transform.
 
-The FFTLog algorithm was originally proposed by [Talman_1978]_.
+The FFTLog algorithm was originally proposed by `[Talman_1978] <https://doi.org/10.1016/j.cpc.2008.10.003>`_.
 
 *For the full documentation, see*
 `casa.colorado.edu/~ajsh/FFTLog <http://casa.colorado.edu/~ajsh/FFTLog>`_.
