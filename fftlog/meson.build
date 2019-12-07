@@ -12,15 +12,6 @@ root = meson.source_root()
 
 fc = meson.get_compiler( 'fortran' )
 
-fc_args = [ '-fsyntax-only' ]
-
-foreach fc_arg : fc_args
-if fc.has_argument( fc_arg )
-add_global_arguments( fc_arg,
-                      language : 'fortran' )
-endif
-endforeach
-
 #######################################################################
 # Make shared library
 
