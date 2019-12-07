@@ -4,6 +4,7 @@
 project( 'fftlog',
          'fortran',
          default_options : [ 'buildtype=release',
+                             'warning_level=0',
                              'prefix=' + meson.source_root() + '/install',
                              'libdir=lib' ] )
 
@@ -11,7 +12,7 @@ root = meson.source_root()
 
 fc = meson.get_compiler( 'fortran' )
 
-fc_args = [ ]
+fc_args = [ '-fsyntax-only' ]
 
 foreach fc_arg : fc_args
 if fc.has_argument( fc_arg )
@@ -31,7 +32,7 @@ fftlog_lib = library( 'fftlog',
                         'fftlog.f' ],
                       install : true )
 
-# fftlog_dep = declare_dependency( link_with : fftlog_lib )
+fftlog_dep = declare_dependency( link_with : fftlog_lib )
 
 #######################################################################
 # PKG-CONFIG
